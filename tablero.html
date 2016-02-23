@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maxium-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi"/>
+        <title>Tablero - Triqui</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    </head>
+    <body onload="cargardatosbasicosTablero();">
+        <h4 style="text-align: center;">Tablero de Juego</h4>
+        <h5 id="nombreUsuario" style="text-align: center; color: #0094ff;">...</h5>
+        <hr/>
+        <h5 id="nombreOponentes" style="text-align: center;">Oponentes: ...</h5>
+        <h5 id="turnoactual" style="text-align: center; color: #0094ff;">Turno: ...</h5>
+        <center>
+        <table>
+            <tr>
+                <td><input id="p11" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td><td><input id="p12" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;"  /></td><td><input id="p13" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td>
+            </tr>
+            <tr>
+                <td><input id="p21" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td><td><input id="p22" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td><td><input id="p23" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td>
+            </tr>
+            <tr>
+                <td><input id="p31" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td><td><input id="p32" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td><td><input id="p33" type="text" class="form-control" style="text-align: center; width:50px; text-transform:uppercase;" /></td>
+            </tr>
+            <tr>
+                <td colspan="3"><button id="btnJugar" class="btn btn-success btn-block" disabled>Jugar</button>  </td>
+            </tr>
+            <tr>
+                <td colspan="3"><button id="btnVolverJugar" class="btn btn-success btn-block hidden">Volver a Jugar</button>  </td>
+            </tr>
+        </table>
+        </center>
+        <h5 id="ganador" style="text-align: center; color: #479c08;">Ganador: ...</h5>
+        <h5 id="nummovimientos" style="text-align: center; color: #0094ff;">Número de movimientos: ...</h5>
+        <button id="btnSalir" class="btn btn-danger btn-block">Salir del juego</button>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="funciones/tablero.js"></script>
+    </body>
+</html>
