@@ -297,6 +297,8 @@ $('#btnVolverJugar').click(function () {
         dataType: "text",
         success: function (result) {
             $("#btnVolverJugar").addClass('hidden');
+            window.clearInterval(intervalo);
+            cargarTableroDaemon();
         },
         error: function (error) {
             alert("Error al enviar, intenta nuevamente" + JSON.stringify(error, null, 2));
